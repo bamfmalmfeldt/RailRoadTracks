@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z84-lu-WM6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RailRoadTracks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="g6R-64-4tb" userLabel="Stack View Vertical">
+                                <rect key="frame" x="10" y="60" width="355" height="597"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WZh-Le-pdV" userLabel="Stack View 1">
+                                        <rect key="frame" x="15" y="0.0" width="325" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tco-Hf-Mxq" userLabel="Die 1">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.5" height="107.5"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ica-nu-tmh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dr9-Zb-pyD" userLabel="Die 2">
+                                                <rect key="frame" x="113.5" y="0.0" width="98" height="107.5"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x87-Ar-vg6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BS-MP-kvO" userLabel="Die 3">
+                                                <rect key="frame" x="226.5" y="0.0" width="98.5" height="107.5"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l3G-gd-w1d"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9se-or-Yv3" userLabel="Stack View 2">
+                                        <rect key="frame" x="15" y="122.5" width="325" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2m-y0-0GF" userLabel="Die 4">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.5" height="107.5"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NHJ-eW-iGy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwx-oe-Hnx" userLabel="Die 5">
+                                                <rect key="frame" x="113.5" y="0.0" width="98" height="107.5"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PDD-Oq-slu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ar-yM-f8E" userLabel="Die 6">
+                                                <rect key="frame" x="226.5" y="0.0" width="98.5" height="107.5"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2A-3b-DAG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ofy-G4-2ga" userLabel="Stack View 3">
+                                        <rect key="frame" x="15" y="245" width="325" height="107"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uB-y2-qaB" userLabel="Die 7">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.5" height="107"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hy7-r0-WEg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYL-WX-kEp">
+                                                <rect key="frame" x="113.5" y="0.0" width="98" height="107"/>
+                                                <state key="normal" image="locomotive"/>
+                                                <connections>
+                                                    <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTy-CZ-Sfb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pq-Ai-Tku" userLabel="Die 8">
+                                                <rect key="frame" x="226.5" y="0.0" width="98.5" height="107"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PKP-CW-aEp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bsk-Zg-5VO" userLabel="Stack View 4">
+                                        <rect key="frame" x="15" y="367" width="325" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cx2-xO-PUz" userLabel="Die 9">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.5" height="107.5"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Pc-nt-itI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0q-6O-Ten" userLabel="Die 10">
+                                                <rect key="frame" x="113.5" y="0.0" width="98" height="107.5"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MRP-zK-K0x"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hzi-LK-Ie6" userLabel="Die 11">
+                                                <rect key="frame" x="226.5" y="0.0" width="98.5" height="107.5"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xMS-NM-HDc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NMX-uH-FiB" userLabel="Stack View 5">
+                                        <rect key="frame" x="15" y="489.5" width="325" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ2-qq-3Kj" userLabel="Die 12">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.5" height="107.5"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wOd-vo-Tum"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTp-Ag-4WM" userLabel="Die 13">
+                                                <rect key="frame" x="113.5" y="0.0" width="98" height="107.5"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LPF-aN-5yL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOf-Sb-Mp5" userLabel="Die 14">
+                                                <rect key="frame" x="226.5" y="0.0" width="98.5" height="107.5"/>
+                                                <state key="normal" image="dice1"/>
+                                                <connections>
+                                                    <action selector="dicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AFs-Ji-FKI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9se-or-Yv3" firstAttribute="leading" secondItem="g6R-64-4tb" secondAttribute="leading" constant="15" id="4ah-GZ-BxR"/>
+                                    <constraint firstItem="bsk-Zg-5VO" firstAttribute="leading" secondItem="g6R-64-4tb" secondAttribute="leading" constant="15" id="4s7-OS-B1C"/>
+                                    <constraint firstItem="NMX-uH-FiB" firstAttribute="leading" secondItem="g6R-64-4tb" secondAttribute="leading" constant="15" id="Bwa-s5-GDI"/>
+                                    <constraint firstItem="ofy-G4-2ga" firstAttribute="leading" secondItem="g6R-64-4tb" secondAttribute="leading" constant="15" id="VGA-JV-oae"/>
+                                    <constraint firstItem="WZh-Le-pdV" firstAttribute="leading" secondItem="g6R-64-4tb" secondAttribute="leading" constant="15" id="pAm-Po-uj8"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4q-IO-DZx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="32"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="b4N-t3-q6T">
+                                        <rect key="frame" x="8" y="8" width="359" height="16"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer:               " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTz-b9-Xm1" userLabel="TimerLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sn1-WV-Pkc" userLabel="HighScoreLabel">
+                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25209873914718628" green="0.53875303268432617" blue="0.093778468668460846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="b4N-t3-q6T" secondAttribute="bottom" id="2am-tC-Up4"/>
+                                    <constraint firstItem="b4N-t3-q6T" firstAttribute="leading" secondItem="R4q-IO-DZx" secondAttribute="leadingMargin" id="8BY-jc-AJa"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="b4N-t3-q6T" secondAttribute="trailing" id="K7V-h8-AQD"/>
+                                    <constraint firstItem="b4N-t3-q6T" firstAttribute="top" secondItem="R4q-IO-DZx" secondAttribute="topMargin" id="zOJ-oE-VJK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25209873914718628" green="0.53875303268432617" blue="0.093778468668460846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g6R-64-4tb" firstAttribute="top" secondItem="R4q-IO-DZx" secondAttribute="bottom" constant="8" id="0Zf-sq-r2O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g6R-64-4tb" secondAttribute="bottom" constant="10" id="2Nr-DZ-tpM"/>
+                            <constraint firstItem="g6R-64-4tb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="4hT-f0-1SN"/>
+                            <constraint firstItem="R4q-IO-DZx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GJH-47-6eA"/>
+                            <constraint firstItem="R4q-IO-DZx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SBo-Rm-ooN"/>
+                            <constraint firstAttribute="trailing" secondItem="g6R-64-4tb" secondAttribute="trailing" constant="10" id="dMW-1C-FXO"/>
+                            <constraint firstItem="g6R-64-4tb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hYT-cg-THx"/>
+                            <constraint firstItem="R4q-IO-DZx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="q7d-jF-AZD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="HighScoreLabel" destination="sn1-WV-Pkc" id="pA4-9T-3h6"/>
+                        <outlet property="TimerLabel" destination="YTz-b9-Xm1" id="O3w-nc-zRd"/>
+                        <outletCollection property="buttonViews" destination="Tco-Hf-Mxq" collectionClass="NSMutableArray" id="89z-B7-X5Q"/>
+                        <outletCollection property="buttonViews" destination="Dr9-Zb-pyD" collectionClass="NSMutableArray" id="oYm-Ak-AvN"/>
+                        <outletCollection property="buttonViews" destination="8BS-MP-kvO" collectionClass="NSMutableArray" id="xh4-ie-gpC"/>
+                        <outletCollection property="buttonViews" destination="X2m-y0-0GF" collectionClass="NSMutableArray" id="AUE-aE-pKR"/>
+                        <outletCollection property="buttonViews" destination="jwx-oe-Hnx" collectionClass="NSMutableArray" id="MFQ-6W-DZw"/>
+                        <outletCollection property="buttonViews" destination="1Ar-yM-f8E" collectionClass="NSMutableArray" id="YwR-ox-hRW"/>
+                        <outletCollection property="buttonViews" destination="7uB-y2-qaB" collectionClass="NSMutableArray" id="5lm-EF-Q9u"/>
+                        <outletCollection property="buttonViews" destination="2Pq-Ai-Tku" collectionClass="NSMutableArray" id="jfo-ho-jY1"/>
+                        <outletCollection property="buttonViews" destination="cx2-xO-PUz" collectionClass="NSMutableArray" id="4Jc-eA-v2O"/>
+                        <outletCollection property="buttonViews" destination="E0q-6O-Ten" collectionClass="NSMutableArray" id="iO3-0V-77K"/>
+                        <outletCollection property="buttonViews" destination="Hzi-LK-Ie6" collectionClass="NSMutableArray" id="nBr-j7-3FQ"/>
+                        <outletCollection property="buttonViews" destination="gZ2-qq-3Kj" collectionClass="NSMutableArray" id="b67-cT-mIa"/>
+                        <outletCollection property="buttonViews" destination="MTp-Ag-4WM" collectionClass="NSMutableArray" id="N8f-Zg-o1w"/>
+                        <outletCollection property="buttonViews" destination="lOf-Sb-Mp5" collectionClass="NSMutableArray" id="YDl-LT-fc9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1150" y="-2214"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gdP-YV-Qaj">
+            <objects>
+                <viewController id="Z84-lu-WM6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4oY-br-tOa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iyv-qq-l5S">
+                                <rect key="frame" x="5" y="25" width="365" height="637"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foJ-SY-Mhk">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="202.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Railroad Tracks!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgi-Ya-fVW">
+                                                <rect key="frame" x="0.0" y="0.0" width="365" height="202.5"/>
+                                                <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="34"/>
+                                                <color key="textColor" red="0.37647058820000001" green="0.1176470588" blue="0.0" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.25209873914718628" green="0.53875303268432617" blue="0.093778468668460846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="qgi-Ya-fVW" firstAttribute="top" secondItem="foJ-SY-Mhk" secondAttribute="top" id="Bu7-v0-nRd"/>
+                                            <constraint firstAttribute="trailing" secondItem="qgi-Ya-fVW" secondAttribute="trailing" id="LWT-nP-acl"/>
+                                            <constraint firstItem="qgi-Ya-fVW" firstAttribute="leading" secondItem="foJ-SY-Mhk" secondAttribute="leading" id="c5z-3x-Iyl"/>
+                                            <constraint firstAttribute="bottom" secondItem="qgi-Ya-fVW" secondAttribute="bottom" id="eWN-QN-XWQ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOa-no-cMT">
+                                        <rect key="frame" x="0.0" y="217.5" width="365" height="202"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRd-hE-fD0">
+                                                <rect key="frame" x="121.5" y="50.5" width="121.5" height="101"/>
+                                                <state key="normal" title="Button" image="locomotive"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="2JY-gl-ccb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.25209873914718628" green="0.53875303268432617" blue="0.093778468668460846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="MRd-hE-fD0" firstAttribute="centerY" secondItem="iOa-no-cMT" secondAttribute="centerY" id="0nR-hE-sjf"/>
+                                            <constraint firstItem="MRd-hE-fD0" firstAttribute="height" secondItem="iOa-no-cMT" secondAttribute="height" multiplier="1:2" id="8dG-PH-V3j"/>
+                                            <constraint firstItem="MRd-hE-fD0" firstAttribute="width" secondItem="iOa-no-cMT" secondAttribute="width" multiplier="1:3" id="FJT-8d-4Qv"/>
+                                            <constraint firstItem="MRd-hE-fD0" firstAttribute="centerX" secondItem="iOa-no-cMT" secondAttribute="centerX" id="M9q-QP-EIL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fv-E4-zot">
+                                        <rect key="frame" x="0.0" y="434.5" width="365" height="202.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Z1-j5-Ewg">
+                                                <rect key="frame" x="0.0" y="0.0" width="365" height="202.5"/>
+                                                <string key="text">How to Play: Push the locomotive button to start. Object of the game: get all 6's (railroad tracks) as fast as possible. Push each die to lock # in place. Push locomotive to roll, and when you have all 6's, press locomotive to stop clock.</string>
+                                                <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="20"/>
+                                                <color key="textColor" red="0.37647058820000001" green="0.1176470588" blue="0.0" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.25209873914718628" green="0.53875303268432617" blue="0.093778468668460846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="5Z1-j5-Ewg" firstAttribute="leading" secondItem="7fv-E4-zot" secondAttribute="leading" id="KPd-6L-5AW"/>
+                                            <constraint firstItem="5Z1-j5-Ewg" firstAttribute="top" secondItem="7fv-E4-zot" secondAttribute="top" id="RJh-oU-0wb"/>
+                                            <constraint firstAttribute="trailing" secondItem="5Z1-j5-Ewg" secondAttribute="trailing" id="bxI-mV-D1q"/>
+                                            <constraint firstAttribute="bottom" secondItem="5Z1-j5-Ewg" secondAttribute="bottom" id="ddD-yC-cdl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25209873914718628" green="0.53875303268432617" blue="0.093778468668460846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UgY-5B-5L9" firstAttribute="bottom" secondItem="iyv-qq-l5S" secondAttribute="bottom" constant="5" id="Aw3-Qi-RVs"/>
+                            <constraint firstItem="iyv-qq-l5S" firstAttribute="leading" secondItem="UgY-5B-5L9" secondAttribute="leading" constant="5" id="NPX-5p-aq4"/>
+                            <constraint firstItem="UgY-5B-5L9" firstAttribute="trailing" secondItem="iyv-qq-l5S" secondAttribute="trailing" constant="5" id="XIZ-ga-3md"/>
+                            <constraint firstItem="iyv-qq-l5S" firstAttribute="top" secondItem="UgY-5B-5L9" secondAttribute="top" constant="5" id="aYI-HX-q11"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UgY-5B-5L9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCN-z4-OwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426.39999999999998" y="-2214.2428785607199"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice1" width="150" height="150"/>
+        <image name="locomotive" width="1024" height="1024"/>
+    </resources>
+</document>
